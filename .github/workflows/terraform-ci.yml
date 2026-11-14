@@ -17,14 +17,14 @@ jobs:
       fail-fast: false
       matrix:
         path:
-          - envs/dev
-          - envs/qa
-          - envs/prod
-          - modules/network
-          - modules/storage
-          - modules/compute
-          - modules/api
-          - modules/observability
+          - iac/workspace/dev
+          - iac/workspace/qa
+          - iac/workspace/prod
+          - iac/network
+          - iac/storage
+          - iac/compute
+          - iac/api
+          - iac/observability
 
     steps:
       - uses: actions/checkout@v4
